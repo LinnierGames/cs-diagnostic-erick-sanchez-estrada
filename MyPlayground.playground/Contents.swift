@@ -66,6 +66,18 @@ func fibonacci_iterative(num: UInt = 10) {
     }
 }
 
-fibonacci_iterative(num: 7)
+//fibonacci_iterative(num: 7)
 
-fibonacci_iterative()
+//fibonacci_iterative()
+
+// Solution for Problem 7
+
+func factorial_recursive(num: UInt) -> UInt {
+    if num == 1 {
+        return 1
+    } else {
+        return factorial_recursive(num: num - 1) * num
+    }
+}
+
+factorial_recursive(num: 4)
