@@ -4,5 +4,6 @@
         <page name='collections'/>
         <page name='functions'/>
         <page name='OOP_examples'/>
+        <page name='Coding Challenges'/>
     </pages>
 </playground>
