@@ -35,5 +35,37 @@ func fizzbuzz(start: Int, end: Int) {
     }
 }
 
-fizzbuzz(start: 1, end: 15)
+//fizzbuzz(start: 1, end: 15)
 
+// Solution for Problem 6
+
+func fibonacci_iterative(num: UInt = 10) {
+    
+    /// number of steps into the sequence
+    var nSteps = 0
+    /// current value of num to be printed
+    var n: Int = 1
+    /// n sub 1
+    var n_1: Int = 0
+    /// n sub 2
+    var n_2: Int = 0
+    while (nSteps < num) {
+        if nSteps == 0 {
+            n = 1
+        } else if nSteps == 1 {
+            n_1 = n
+            n = n + n_1
+        } else {
+            n_2 = n_1
+            n_1 = n
+            n = n_1 + n_2
+        }
+        
+        print(n)
+        nSteps += 1
+    }
+}
+
+fibonacci_iterative(num: 7)
+
+fibonacci_iterative()
