@@ -3,14 +3,18 @@
 import Foundation
 import UIKit
 
-// Solution to Problem 10
+// Solution to Problem 12
 
-class Car {
+class Automobile {
     var numberOfWheels: Int
     var make: String
     var model: String
     var color: UIColor
     var topSpeed: Double
+    
+    convenience init(color: UIColor) {
+        self.init(numberOfWheels: 4, make: "", model: "", color: color, topSpeed: 0)
+    }
     
     init(numberOfWheels wheels: Int, make: String, model: String, color: UIColor, topSpeed: Double) {
         self.numberOfWheels = wheels
@@ -33,7 +37,31 @@ class Car {
     }
 }
 
-var car = Car(numberOfWheels: 4, make: "Mazda", model: "3", color: UIColor.black, topSpeed: 500)
+class Car: Automobile {
+    convenience init(color: UIColor) {
+        self.init(numberOfWheels: 4, make: "", model: "", color: color, topSpeed: 0)
+    }
+}
+
+class MotoCycle: Automobile {
+    convenience init(color: UIColor) {
+        self.init(numberOfWheels: 2, make: "", model: "", color: color, topSpeed: 0)
+    }
+}
+
+class SemiTruck: Automobile {
+    convenience init(color: UIColor) {
+        self.init(numberOfWheels: 16, make: "", model: "", color: color, topSpeed: 0)
+    }
+}
+
+var car = Car(color: UIColor.black)
 car.description()
+
+var truck = SemiTruck(color: UIColor.blue)
+truck.description()
+
+var moto = MotoCycle(color: UIColor.blue)
+moto.description()
 
 //: [Next](@next)
