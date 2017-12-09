@@ -3,5 +3,6 @@
     <pages>
         <page name='collections'/>
         <page name='functions'/>
+        <page name='OOP_examples'/>
     </pages>
 </playground>
