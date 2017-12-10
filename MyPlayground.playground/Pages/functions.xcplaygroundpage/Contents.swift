@@ -35,7 +35,7 @@ func fizzbuzz(start: Int, end: Int) {
     }
 }
 
-//fizzbuzz(start: 1, end: 15)
+fizzbuzz(start: 1, end: 15)
 
 // Solution for Problem 6
 
@@ -66,9 +66,9 @@ func fibonacci_iterative(num: UInt = 10) {
     }
 }
 
-//fibonacci_iterative(num: 7)
+fibonacci_iterative(num: 7)
 
-//fibonacci_iterative()
+fibonacci_iterative()
 
 // Solution for Problem 7
 
@@ -80,7 +80,7 @@ func factorial_recursive(num: UInt) -> UInt {
     }
 }
 
-//factorial_recursive(num: 4)
+factorial_recursive(num: 4)
 
 // Solution for Problem 8
 
